@@ -17,3 +17,23 @@ def find_missing(array, n=100):
         print("The missing number is = ", sum1-sum2)
         
 find_missing(myList)
+
+
+# Q2. Find the pair of numbers whose sum is equal to the given number
+
+list1 = [i for i in range(1,21)]
+
+def Find_Pair(list,sum):
+    '''
+    input : a list, and a sum of number
+    output : a pair of number equals to the sum of number
+    '''
+    pair=[]
+    for i in range(len(list)):
+        for j in range(i+1,len(list)):
+            if list[i]+list[j] == sum :
+                print(list[i],list[j])
+                
+                    
+            
+Find_Pair(list1,8)
